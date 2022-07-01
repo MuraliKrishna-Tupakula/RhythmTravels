@@ -1,0 +1,77 @@
+<html>
+<head>
+<script>
+function display()
+{
+	document.write("hello ! this is display function");
+}
+function display1(x,y)
+{
+	document.write("addition is "+(x+y));
+	a=window.prompt("enter a value","10");
+a=parseInt(a);
+b=parseInt(window.prompt("enter b value","10"));
+document.write("a is ="+a,"<br> b is ="+b);
+window.alert("b is ="+b);
+document.write("<br>");
+document.write("<font color='purple' >ARITHMETIC OPERATIONS ARE IN JAVASCRIPT</font>");
+
+document.write("<br>");
+document.write("<p style='color:red;'>addition is</p> "+(a+b));
+document.write("<br>");
+document.write("subtraction  is "+(a-b));
+document.write("<br>");
+document.write("division is "+(a/b));
+document.write("<br>");
+document.write("multiplication  is "+(a*b));
+document.write("<br>");
+document.write("modular div is "+(a%b));
+	
+}
+function display2(a,b)
+{
+	document.write("subtraction is "+(a-b));
+	a=window.prompt("enter a value","10");
+   a=parseInt(a);
+if(a<=18)
+document.write(" person is not elgible to vote");
+else
+document.write(" person is elgible to vote");
+
+document.write("<br>");
+	
+	
+}
+function display3()
+{
+	document.write("hello iam return type");
+	
+	a=window.prompt("enter a value","10");
+a=parseInt(a);
+fact=1;
+for(i=1;i<=a;i++)
+{
+	fact=fact*i;
+}
+
+document.write(" factorial of given number is <br> " +fact);
+document.write("<br>");
+return "cse=b";
+}
+
+
+</script>
+
+</head>
+<body >
+<p onmouseover="display1(10,20)">place mouse here</p>
+<br>
+<br>
+<br>
+<h2 onclick="display3()">click here</h2>
+<br>
+<br>
+<br>
+<h1 onmouseout="display2(20,10)">plaCe mouse here and out then you get</h1>
+</body>
+</html>

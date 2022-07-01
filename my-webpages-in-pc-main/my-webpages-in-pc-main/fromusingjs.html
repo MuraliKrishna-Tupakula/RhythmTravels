@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function readValues()
+{
+  stu=form_reg.name.value;
+  st=document.form_reg.pwd.value;
+  document.write("hello"+stu);
+  document.write("<br>");
+  document.write("hi"+st);
+}
+</script>
+</head>
+<body>
+<form name="form_reg" action="serveraddress">
+Name:<input type="text" name="name" value="cse" ><br>
+Password:<input type="password" name="pwd" value="123456">
+<br>
+<input type="button" value="click here" onclick="readValues()">
+
+
+</form>
+</body>
+</html>

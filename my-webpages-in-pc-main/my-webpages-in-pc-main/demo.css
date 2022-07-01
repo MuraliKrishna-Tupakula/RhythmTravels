@@ -1,0 +1,5 @@
+h1{background-color:blue;color:yellow;}
+h2{border:dotted;color:green;border-color:blue;border-radius:25px}
+p.cfp{color:purple;border:solid;border-left-width:8px;
+background-color:pink;border-right:0px;font-size:50px;border-bottom:0px;border-top:0px;}
+h3{background-color:green;border:groove;border-color:yellow;border-width:5px;}
