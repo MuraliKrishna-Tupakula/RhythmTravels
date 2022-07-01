@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title >Rhythm Travels</title>
+<link rel="icon" type="image/x-icon" href="bird12344456.png" >
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="slides1.css">
+<link rel="stylesheet" href="slides.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+body, html {
+  height: 50%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('img_nature_wide.jpg');
+
+  /* Full height */
+  height:400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#E5AD18  ;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color:  #0004ff;
+  text-align: right;
+   padding: 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:#40ff00;
+  color: black;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #c8ff00;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #8B0000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #00ff00;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Style the header */
+.header {
+  background-color: 	#ff4000;
+  padding: 80px;
+  text-align: center;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: left;
+  padding: 12px;
+  text-decoration:none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #00FF00;
+  color: black;
+}
+
+
+
+/* Style the footer */
+.footer {
+  background-color: #52de0bdd;
+  padding: 20px;
+}
+.footer a:hover {
+  color: rgb(201, 25, 28);
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+     
+        
+      <a href="home7.html" class="logo"> <img src="bird12344456.png" alt="bird" width=70px 
+     background-color="blue" align="left" style=" font-size:10px";><font color="blue"  > Rhythm Travels</font></a>
+    
+    </div>
+    
+    <div class="topnav">
+      <a href="#">ContactUs</a>
+      <a href="#">Aboutus</a>
+      <a href="#">Home</a>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+    <div class="slideshow-container">
+    <div class="mySlides fade">
+    <div class="numbertext">1</div>
+        <img src="img_nature_wide.jpg" style="width:100%">
+        <div class="text">Forest</div>
+    </div>
+      
+    <div class="mySlides fade">
+    <div class="numbertext">2</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+    <div class="text">Mountain</div>
+    </div>
+      
+    <div class="mySlides fade">
+      <div class="numbertext">3</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+      <div class="text">Water</div>
+    </div>
+    </div>
+    <br>
+      
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+      
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        
+    </script>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28266.716383435767!2d80.62010196063552!3d16.50520421154771!2m3!1f0!2f0!3f0!3m2!1i1024
+    !2i768!4f13.1!3m3!1m2!1s0x3a35effe31625f67%3A0x10f9c4f923123e4a!2sGovernor%20Peta%2C%20Vijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1653800365167!5m2!1sen!2sin" 
+    width="1600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    <div class="parallax">
+        <div class="slideshow-container1">
+
+            <div class="mySlides1">
+                <i class="fa fa-quote-left" style="font-size:46px;color: #104FD6"></i><b><font size="5%" color="#55D610">John Keats</font></b>
+                <p><font size="5%" ><i>We had rented a few buses for my brother's wedding.<br>they provided an excellent service</i> </font></p>
+            </div>
+            
+            <div class="mySlides1">
+                <i class="fa fa-quote-left" style="font-size:46px;color: #104FD6"></i><b><font size="5%" color="#55D610">Ernest Hemingway</font></b>
+                <p><font size="5%" ><i> Renteda Bus for my office picnic.it was tidy and best quality.<br>
+                we did not have any issues during the drive.</i></font> </p>
+            </div>
+            
+            <div class="mySlides1">
+             
+                <i class="fa fa-quote-left" style="font-size:46px;color: #104FD6"></i><b><font size="5%" color="#55D610">Thomas A. Edison</font></b>
+                <p><font size="5%" ><i>We hired a bus from them for our trip to mamali.The trip was smooth as the bus<br> quite comfortable 
+                    and clean.</i></font></p>
+            </div>
+            
+            <a class="prev1"   onclick="plusSlides(-1)">❮</a>
+            <a class="next1" onclick="plusSlides(1)">❯</a>
+            
+        </div>
+            
+            <div class="dot-container1">
+              <span class="dot1" onclick="currentSlide(1)"></span> 
+              <span class="dot1" onclick="currentSlide(2)"></span> 
+              <span class="dot1" onclick="currentSlide(3)"></span> 
+          </div>
+        <script>
+            var slideIndex1 = 1;
+            showSlides1(slideIndex1);
+            
+            function plusSlides(n) {
+              showSlides1(slideIndex1 -= n);
+            }
+            
+            function currentSlide(n) {
+              showSlides1(slideIndex1 = n);
+            }
+            
+         function showSlides1() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides1");
+          let dots = document.getElementsByClassName("dot1");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex1++;
+          if (slideIndex1 > slides.length) {slideIndex1 = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex1-1].style.display = "block";  
+          dots[slideIndex1-1].className += " active";
+          setTimeout(showSlides1, 2000); // Change image every 2 seconds
+        }
+        </script>
+<div class="footer"> 
+    <p1><a href="#" align="left"><font size="5%" >*Home</font></a></p1>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <p4><a href="#" align="left"><font size="5%"  >*BusesFor</font></a></p4>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp;
+    <p6><font size="5%" color=" #114188" >Contact:</font></p6>
+    <br>
+    <p2><a href="#"><font size="5%"  >*Aboutus</font></a></p2>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <p5><a href="#" align="left"><font size="5%"  >*We Have</font></a></p5>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+    <p7><font size="5%" color=" #114188" >Rhythmtravels,governerpet,52001,A.P</font></p7>
+    <br>
+   <p3> <a href="#"><font size="5%"  >*ContactUs</font></a></p3>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+   <p8><a target="_blank" href="mailto:rhythm@gmail.com"><font size="5%"
+     color=" #114188" >rhythm@gmail.com</font></a></p8>
+   <br>
+  <center><h3><font size="5%" >© Copyrights 2022 - 2023.Rhythm Travels Travels.All Rights Reserved.</font></h3></center>
+</div>
+    
+
+            
+</body>
+</html> 
+            

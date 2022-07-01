@@ -1,0 +1,9 @@
+<%
+String name=request.getParameter("n1");
+String branch=request.getParameter("n2");
+out.println(name+" "+branch);
+//try
+//dblogic
+
+//catch
+%>
